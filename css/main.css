@@ -1,0 +1,500 @@
+/*
+* Project Name: Malls
+* FrontEnd Author: MostafaKhanipour
+* BackEnd Author: PayamJafari
+* Android & Windows Author: RezaGhaedi
+* Author URL: https://themeforest.net/user/mostafakhanipour
+* Version: 0.1
+*/
+
+/* ------------------------------------------------------------
+1. Fonts
+2. General Styles
+3. Header
+4. Page Content
+5. ...
+6. ...
+-. ...
+-. Media Queries
+
+------------------------------------------------------------ */
+
+/* -------------------- Fonts Start --------------------
+                        1. Fonts */
+
+
+      /* Google fonts */
+      @import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
+
+      /* Linear Icons Font */
+      @import url('./fonts/linear-icons-font/style.css');
+
+      /* Linear Icons Font */
+      @import url('./fonts/fontawesome-free-5.12.1-web/css/all.min.css');
+
+      /* iransans Font */
+      @import url('./fonts/iransans/css/fontiran.css');
+
+
+/* ------- Fonts End -------*/
+
+/* -------------------- General Styles Start --------------------
+                        2. General Styles */
+
+
+      /* General Styles */
+      html {
+          margin: 0;
+          width: 100%;
+          height: 100%;
+          min-height: 100%;
+          overflow: hidden;
+      }
+      body{
+          background-color: #EDEDED;
+          margin: 0;
+          width: 100%;
+          height: 100%;
+          min-height: 100%;
+          font-size: 15px;
+          font-family: 'iransansdn', Helvetica, sans-serif;
+          line-height: 1.65em;
+          font-weight: 400;
+          overflow: hidden;
+          color: #555;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-position: 50% 50%;
+          background-size: cover;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+          color: #222;
+          font-family: 'iransansdn', Helvetica, sans-serif;
+          font-weight: 600;
+      }
+      h1, h2, h3, h4, h5, h6 {
+          color: #222;
+          font-family: 'iransansdn', Helvetica, sans-serif;
+          font-weight: 600;
+      }
+      h1 {
+          font-size: 32px;
+      }
+      h2 {
+          font-size: 27px;
+      }
+      h3 {
+          font-size: 21px;
+      }
+      h4 {
+          font-size: 18px;
+      }
+      h5 {
+          font-size: 16px;
+      }
+      h6 {
+          font-size: 14px;
+      }
+
+      a {
+          color: #0099cc;
+          text-decoration: none;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+      }
+
+
+
+
+
+
+
+
+/* ------- General Styles End -------*/
+
+/* -------------------- Header Start --------------------
+                        3. Header */
+
+
+      /* Header */
+      .topMenu , .menu{
+          background: #FFFFFF;
+      }
+      .menu{
+          -webkit-box-shadow: 0 2px 4px 0 hsla(0,0%,44.3%,.05);
+          box-shadow: 0 2px 4px 0 hsla(0,0%,44.3%,.05);
+          background-color: #fff;
+          /* position: absolute; */
+          -webkit-box-shadow: rgba(0,0,0,.04) 0 7px 8px 0;
+          box-shadow: 0 7px 8px 0 rgba(0,0,0,.04);
+          -webkit-transition: all .3s ease;
+          transition: all .3s ease;
+          left: 0;
+          top: 100%;
+          right: 0;
+          z-index: 99;
+          -webkit-transition: -webkit-transform .3s;
+          transition: -webkit-transform .3s;
+          transition: transform .3s;
+          transition: transform .3s,-webkit-transform .3s;
+      }
+      .search{
+          display: inline-block;
+          position: relative;
+          width: 50%;
+      }
+      .search::before{
+          font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f002";
+          position: absolute;
+          right: 5px;
+          top: 50%;
+          transform: translateY(-50%);
+          color: #a1a3a8;
+          font-size: 24px;
+      }
+      .search input{
+          /* padding: 5px 40px; */
+          padding: 14px 45px 14px 10px;
+          border: none;
+          background: #F0F0F1;
+          border-radius: 8px;
+          color: #474747;
+          font-size: .857rem;
+          width: 100%;
+          height: 100%;
+          line-height: 1.833;
+          font-weight: 300;
+      }
+      .search input:focus{
+          outline: none;
+      }
+      .logo img{
+          max-width: 120px;
+      }
+
+      .hleft{
+          display: inline-block;
+          max-width: 370px;
+          float: left;
+          top: 13px;
+          left: 20px;
+          position: relative;
+      }
+      .hleft .btnLogin{
+          display: inline-block;
+          margin-left: 8px;
+      }
+      .hleft .btnLogin a{
+          font-size: 12px;
+          padding: 10px 12px;
+          line-height: 1.833;
+          border-radius: 8px;
+          font-size: .857rem;
+          display: flex;
+          border: 1px solid #e0e0e2;
+          -webkit-box-align: center;
+          align-items: center;
+          white-space: nowrap;
+          flex-shrink: 0;
+          cursor: pointer;
+          color: #616161;
+      }
+      .hleft .btnLogin a::before{
+          font-family: "Font Awesome 5 Free";
+          /* font-weight: 900;  */
+          content: "\f007";
+          margin-left: 8px;
+          color: #a1a3a8;
+          font-size: 17px;
+          /* font-size: 1.714rem; */
+          line-height: 1.833;
+      }
+      .cart{
+          display: inline-block;
+          position: relative;
+      }
+      .cart::before{
+          content: "";
+          display: block;
+          height: 24px;
+          background: #e0e0e2;
+          position: absolute;
+          right: 0;
+          width: 1px;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+      }
+      .btnCart{
+          display: inline-block;
+          margin-right: 5px;
+      }
+      .btnCart a::after{
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f07a";
+          margin: 8px;
+          color: #a1a3a8;
+          font-size: 24px;
+          /* font-size: 1.714rem; */
+          line-height: 1.833;
+      }
+
+      /* menu */
+      .mainMenu a{
+          color: #616161;
+          transition: 0.5s;
+          text-decoration: none;
+          display: inline-block;
+          padding: 10px 0px;
+          position: relative;
+      }
+      ul.mainMenu > li::after{
+          background: none repeat scroll 0 0 transparent;
+          bottom: 0px;
+          content: "";
+          display: block;
+          height: 2px;
+          left: 50%;
+          position: absolute;
+          background: #EF5661;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          width: 0;
+      }
+      ul.mainMenu > li:hover::after{
+          width: 100%;
+          left: 0;
+      }
+      ul.mainMenu > li.listCategory::after{
+          transition: width 0.3s ease 0s, right 0.3s ease 0s;
+          right: 2%;
+      }
+      ul.mainMenu > li.listCategory:hover::after{
+          width: 9%;
+          left: auto;
+      }
+
+
+      ul.mainMenu{
+          list-style: none;
+          position: relative;
+      }
+      ul.mainMenu > li{
+          display: inline-block;
+          padding: 10px;
+          align-items: center;
+          font-weight: 400;
+          padding: 7px 8px 8px;
+          padding-bottom: 0;
+          color: #616161;
+          cursor: default;
+          font-size: 12px;
+          font-size: .857rem;
+          position: relative;
+      }
+
+
+      li.listCategory{
+          position: unset!important;
+          padding-left: 0px!important;
+      }
+      li.listCategory > a::before{
+          font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0c9";
+          font-size: 18px;
+          margin-left: 6px;
+          color: #424750;
+      }
+      li.listCategory::after{
+          content: " ";
+          display: inline-block;
+          height: 20px;
+          background: #f0f0f1;
+          /* position: absolute; */
+          /* left: 0; */
+          /* margin: 0 5px; */
+          width: 1px;
+          /* top: 50%; */
+          -webkit-transform: translateY(-50%);
+          transform: translateY(25%);
+          /* font-size: 18px; */
+          /* margin-left: 6px; */
+          margin-right: 10px;
+          /* color: #424750; */
+          border-radius: 5px;
+      }
+
+      /* menu icons */
+      li.listCategory-offer > a::before , li.listCategory-question > a::before , li.listCategory-storeRegistration > a::before , li.listCategory-mallsPlus > a::before , li.listCategory-sublist--digital > a::before , li.listCategory-sublist--toys > a::before , li.listCategory-sublist--book > a::before , li.listCategory-sublist--sport > a::before , .listCategory-sublist--heart >
+       a::before , .listCategory-option--title > a::after , .listCategory-option-topbar > a::after{
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: #a1a3a8;
+          font-size: 13px;
+          /* font-size: 1.143rem; */
+          line-height: 1.375;
+          margin-left: 6px;
+      }
+      .listCategory-option--title > a::after , .listCategory-option-topbar > a::after{
+          margin-left: 0;
+          margin-right: 4px;
+          color: #464B54;
+      }
+      li.listCategory-offer > a::before{
+          content: "\f295";
+      }
+      li.listCategory-mallsPlus > a::before{
+          content: "\f067";
+          color: #A63489;
+      }
+      li.listCategory-question > a::before{
+          /* content: "\f128"; */
+      }
+      li.listCategory-storeRegistration > a::before{
+          /* content: "\f54e"; */
+      }
+      li.listCategory-sublist--digital > a::before{
+          content: "\f109";
+      }
+      li.listCategory-sublist--toys > a::before{
+          content: "\f7d0";
+      }
+      li.listCategory-sublist--book > a::before{
+          content: "\f5ae";
+      }
+      li.listCategory-sublist--sport > a::before{
+          content: "\f7c9";
+      }
+      li.listCategory-sublist--heart > a::before{
+          content: "\f21e";
+      }
+      .listCategory-option--title > a::after , .listCategory-option-topbar > a::after{
+          content: "\f104";
+      }
+
+
+
+      /* sublist */
+      .listCategory-sublist-container{
+          position: absolute;
+          top: 100%;
+          display: none;
+          right: 0;
+          left: 0;
+          z-index: 12;
+          width: 95%;
+          margin: 0 auto;
+          background-color: #FBFBFB;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          border-radius: 0 0 8px 8px;
+          overflow: hidden;
+          padding: 0;
+          -webkit-box-shadow: 0 10px 10px 0 rgba(0,0,0,.15);
+          box-shadow: 0 10px 10px 0 rgba(0,0,0,.15);
+      }
+      ul.listCategory-sublist{
+          display: inline-block;
+          list-style: none;
+          /* padding-right: 0; */
+          padding: 8px 0;
+          border-left: 1px solid #f0f0f1;
+          max-width: 230px;
+          align-self: stretch;
+          width: 20%;
+      }
+
+      ul.listCategory-sublist > li{
+          padding: 2px 8px 2px 30px;
+          color: #616161;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          cursor: pointer;
+          font-size: 12px;
+          font-size: .857rem;
+          line-height: 1.833;
+          font-weight: 400;
+          /* transition: 0.1s; */
+          border-bottom: 1px solid #ffffff00;
+          border-top: 1px solid #ffffff00;
+      }
+      ul.listCategory-sublist > li > a{
+          color: inherit;
+      }
+
+      .listCategory-option{
+          display: block;
+          overflow: hidden;
+          padding-left: 10px;
+          height: 100%;
+          width: 100%;
+          padding: 12px;
+      }
+      #category2 , #category3 , #category4 , #category5{
+          display: none;
+      }
+      .listCategory-option--category > ul{
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          max-height: 418px;
+          list-style: none;
+          padding-right: 0;
+      }
+      .listCategory-option--category > ul > li{
+          max-width: 200px;
+      }
+      .listCategory-option-topbar{
+          padding: 10px 0;
+      }
+      .listCategory-option--category a{
+          padding: 3px 0;
+      }
+      .listCategory-option--category li{
+          font-weight: 300;
+      }
+      li.listCategory-option--title{
+          font-weight: 700;
+      }
+
+
+
+
+
+
+
+
+
+
+      ul.mainMenu > li:hover > a{
+          padding-bottom: 9px;
+          /* border-bottom: 2px solid orange; */
+      }
+      .listCategory-sublist--hoverd{
+          background: #f1f1f1;
+          border-bottom: 1px solid #0000001f!important;
+          border-top: 1px solid #0000001f!important;
+      }
+
+      ul.listCategory-sublist > li:hover > a::before , ul.listCategory-sublist > li:hover , .listCategory a:hover , .listCategory a:hover::after{
+          color: #EF394E;
+
+      }
+
+
+
+/* ------- Header End -------*/
