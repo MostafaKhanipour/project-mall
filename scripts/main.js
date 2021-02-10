@@ -35,9 +35,11 @@
             var idDataSublistIndex = $(this).attr("data-sublistIndex");
             $(this).addClass("listCategory-sublist--hoverd");
             $("#category"+idDataSublistIndex).css("display","block");
+            console.log("hello mehrad and payam!");
             $("#category"+idDataSublistIndex).hover(function(){
 
             },function(){
+                
 
             });
         },function(){
